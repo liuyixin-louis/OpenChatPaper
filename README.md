@@ -28,8 +28,6 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 
 ## Demo Example
 
-> Temporary demo website: http://5e2f-128-180-213-119.ngrok.io/
-
 - Prepare an [OpenAI API key](https://platform.openai.com/account/api-keys) and then upload a PDF to start chatting with the paper. 
 
 ![image-20230318232056584](https://s2.loli.net/2023/03/19/SbsuLQJpdqePoZV.png)
