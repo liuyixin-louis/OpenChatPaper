@@ -1,4 +1,5 @@
 # ChatPaper
+Yet another paper reading assistant, similar as [ChatPDF](https://www.chatpdf.com/). 
 
 ## Setup
 
