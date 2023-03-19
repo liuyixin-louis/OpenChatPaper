@@ -50,3 +50,17 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 2. St-chat: https://github.com/AI-Yash/st-chat
 3. Sentence-transformers: https://github.com/UKPLab/sentence-transformers
 4. ChatGPT Chatbot Wrapper: https://github.com/acheong08/ChatGPT
+
+
+## How to cite
+
+If you want to cite this work, please refer to the present GitHub project with BibTeX:
+
+```bibtex
+@misc{ChatPaper,
+    title = {ChatPaper},
+    howpublished = {\url{https://github.com/liuyixin-louis/ChatPaper}},
+    publisher = {GitHub},
+    year = {2023},
+}
+```
