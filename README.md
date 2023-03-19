@@ -42,4 +42,4 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 1. SciPDF Parser: https://github.com/titipata/scipdf_parser 
 2. St-chat: https://github.com/AI-Yash/st-chat
 3. Sentence-transformers: https://github.com/UKPLab/sentence-transformers
-4. https://github.com/acheong08/ChatGPT
+4. ChatGPT Chatbot Wrapper: https://github.com/acheong08/ChatGPT
