@@ -1,0 +1,4 @@
+[server]
+port = 7860
+enableXsrfProtection = false
+gatherUsageStats = false

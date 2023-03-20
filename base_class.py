@@ -19,7 +19,7 @@ class Embedding_Model(metaclass=abc.ABCMeta):
 
     def __init__(self, model_name) -> None:
         """Initialize the embedding model"""
-        embedding_cache_path = f"/data/ckpt/embedding_cache_{model_name}.pkl"
+        embedding_cache_path = f"/app/ckpt/embedding_cache_{model_name}.pkl"
         self.embedding_cache_path = embedding_cache_path
 
         # load the cache if it exists, and save a copy to disk
@@ -43,7 +43,7 @@ class AbstractPDFParser(metaclass=abc.ABCMeta):
 
     def __init__(self, db_name) -> None:
         """Initialize the pdf database"""
-        db_cache_path = f"/data/ckpt/pdf_parser_{db_name}.pkl"
+        db_cache_path = f"/app/ckpt/pdf_parser_{db_name}.pkl"
         self.db_cache_path = db_cache_path
 
         # load the cache if it exists, and save a copy to disk
@@ -87,14 +87,14 @@ class AbstractPDFParser(metaclass=abc.ABCMeta):
         """
         pass
 
-    @abc.abstractmethod
-    def _determine_optimal_split_of_pargraphs(self, ) -> None:
-        """
-        Determine the optimal split of paragraphs
-        Return:
-            split_paragraphs: dict of metadata and corresponding list of split paragraphs
-        """
-        pass
+    # @abc.abstractmethod
+    # def _determine_optimal_split_of_pargraphs(self, ) -> None:
+    #     """
+    #     Determine the optimal split of paragraphs
+    #     Return:
+    #         split_paragraphs: dict of metadata and corresponding list of split paragraphs
+    #     """
+    #     pass
 
 
 class ChatbotEngine(metaclass=abc.ABCMeta):
