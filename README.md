@@ -1,6 +1,6 @@
-# ChatPaper
+# OpenChatPaper
 
-Yet another paper reading assistant, similar to [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
+Yet another paper reading assistant. An open-source version of [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
 ## Online Demo API
 
