@@ -1,6 +1,5 @@
 # OpenChatPaper
 ![logo](./logo.png)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
 Yet another paper reading assistant. An open-source version of [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
 ## Online Demo API
