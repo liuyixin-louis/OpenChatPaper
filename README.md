@@ -1,6 +1,6 @@
 # OpenChatPaper
 
-<img src="./logo.png" width="300" height="200">
+<img src="./logo.png" width="700" height="200">
 
 Yet another paper reading assistant. An open-source version of [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
