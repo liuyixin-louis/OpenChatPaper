@@ -1,6 +1,11 @@
 # ChatPaper
 Yet another paper reading assistant, similar as [ChatPDF](https://www.chatpdf.com/). 
 
+## Online Demo API
+> Currently we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper).
+
+![image](https://user-images.githubusercontent.com/53036760/226486291-90173dee-bff4-4e57-a094-0aa4a6b1712a.png)
+
 ## Setup
 
 1. Install dependencies (tested on Python 3.9)
@@ -50,3 +55,17 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 2. St-chat: https://github.com/AI-Yash/st-chat
 3. Sentence-transformers: https://github.com/UKPLab/sentence-transformers
 4. ChatGPT Chatbot Wrapper: https://github.com/acheong08/ChatGPT
+
+
+## How to cite
+
+If you want to cite this work, please refer to the present GitHub project with BibTeX:
+
+```bibtex
+@misc{ChatPaper,
+    title = {ChatPaper},
+    howpublished = {\url{https://github.com/liuyixin-louis/ChatPaper}},
+    publisher = {GitHub},
+    year = {2023},
+}
+```
