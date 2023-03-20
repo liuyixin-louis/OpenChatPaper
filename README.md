@@ -1,8 +1,10 @@
 # ChatPaper
-Yet another paper reading assistant, similar as [ChatPDF](https://www.chatpdf.com/). 
+
+Yet another paper reading assistant, similar to [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
 ## Online Demo API
-> Currently we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper).
+
+> Currently, we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper).
 
 ![image](https://user-images.githubusercontent.com/53036760/226486291-90173dee-bff4-4e57-a094-0aa4a6b1712a.png)
 
