@@ -53,6 +53,10 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 - [ ] **Context Condense**: how to deal with long context? maybe we can tune a soft prompt to condense the context
 - [ ] **Poping context out based on similarity**
 
+## Cooperation & Contributions
+
+Feel free to reach out for possible cooperations or Contributions! (yixinliucs at gmail.com)
+
 ## References
 
 1. SciPDF Parser: https://github.com/titipata/scipdf_parser 
