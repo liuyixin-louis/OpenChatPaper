@@ -1,6 +1,10 @@
 # ChatPaper
 Yet another paper reading assistant, similar as [ChatPDF](https://www.chatpdf.com/). 
 
+## Online Demo API
+> Currently we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper).
+![image](https://user-images.githubusercontent.com/53036760/226486291-90173dee-bff4-4e57-a094-0aa4a6b1712a.png)
+
 ## Setup
 
 1. Install dependencies (tested on Python 3.9)
