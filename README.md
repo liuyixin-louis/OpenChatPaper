@@ -2,7 +2,7 @@
 
 ![logo](./logo.png)
 
-Yet another paper reading assistant. An open-source version that attempts to reimplement [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
+Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source version that attempts to reimplement [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
 ## Online Demo API
 
