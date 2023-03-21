@@ -52,6 +52,7 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 
 - [ ] **Context Condense**: how to deal with long context? maybe we can tune a soft prompt to condense the context
 - [ ] **Poping context out based on similarity**
+- [ ] **Handling paper with longer pages**
 
 ## Cooperation & Contributions
 
