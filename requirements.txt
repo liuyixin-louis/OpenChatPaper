@@ -1,0 +1,13 @@
+Flask==2.2.3
+streamlit
+streamlit-chat
+torch
+sentence_transformers
+bs4
+openai
+matplotlib
+plotly
+tiktoken
+lxml
+PyPDF2
+pdfminer.six
