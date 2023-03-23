@@ -1,6 +1,8 @@
 # OpenChatPaper
+
 ![logo](./logo.png)
-Yet another paper reading assistant. An open-source version of [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
+
+Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source version that attempts to reimplement [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
 ## Online Demo API
 
@@ -50,6 +52,11 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 
 - [ ] **Context Condense**: how to deal with long context? maybe we can tune a soft prompt to condense the context
 - [ ] **Poping context out based on similarity**
+- [ ] **Handling paper with longer pages**
+
+## Cooperation & Contributions
+
+Feel free to reach out for possible cooperations or Contributions! (yixinliucs at gmail.com)
 
 ## References
 
