@@ -18,7 +18,7 @@ Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source 
  pip install -r requirements.txt
 ```
 
-2. Setup GROBID local server
+2. Setup and lauch GROBID local server (add & at the end of command to run the program in the background)
 
 ```bash
 bash serve_grobid.sh
