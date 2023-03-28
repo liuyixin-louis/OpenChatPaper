@@ -78,3 +78,8 @@ If you want to cite this work, please refer to the present GitHub project with B
     year = {2023},
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=liuyixin-louis/OpenChatPaper&type=Date)](https://star-history.com/#liuyixin-louis/OpenChatPaper&Date)
+
