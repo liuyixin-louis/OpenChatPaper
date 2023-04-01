@@ -4,9 +4,11 @@
 
 Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source version that attempts to reimplement [ChatPDF](https://www.chatpdf.com/). A different dialogue version of another [ChatPaper](https://github.com/kaixindelele/ChatPaper) project. 
 
+又一个基于OpenAI ChatGPT API的论文阅读助手。试图重新实现ChatPDF](https://www.chatpdf.com/)的开源版本。支持对话的[ChatPaper](https://github.com/kaixindelele/ChatPaper)版本。
+
 ## Online Demo API
 
-> Currently, we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper).
+> Currently, we provide a demo (still developing) on the [huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper). 目前，我们在[huggingface space](https://huggingface.co/spaces/yixin6178/ChatPaper)上提供演示（仍在开发中）。
 
 ![image](https://user-images.githubusercontent.com/53036760/226486291-90173dee-bff4-4e57-a094-0aa4a6b1712a.png)
 
@@ -35,6 +37,17 @@ python backend.py --port 5000 --host localhost
 ```bash
 streamlit run frontend.py --server.port 8502 --server.host localhost
 ```
+
+## 中文配置文档
+1. 创建一个`Python>=3.9`的环境（推荐使用anaconda），创建环境后激活并且安装依赖
+```bash
+ conda create -n cpr python=3.9
+ conda activate cpr
+ pip install -r requirements.txt
+```
+
+2. 
+ 
 
 ## Demo Example
 
