@@ -1,3 +1,4 @@
+import os
 import abc
 import pandas as pd
 import pickle
@@ -19,7 +20,9 @@ class Embedding_Model(metaclass=abc.ABCMeta):
 
     def __init__(self, model_name) -> None:
         """Initialize the embedding model"""
-        embedding_cache_path = f"/app/ckpt/embedding_cache_{model_name}.pkl"
+        user_path = os.path.expanduser('~')
+        ckpt_path = os.path.join(user_path, "ckpt")
+        embedding_cache_path = os.path.join(ckpt_path, f"embedding_cache_{model_name}.pkl")
         self.embedding_cache_path = embedding_cache_path
 
         # load the cache if it exists, and save a copy to disk
@@ -43,7 +46,9 @@ class AbstractPDFParser(metaclass=abc.ABCMeta):
 
     def __init__(self, db_name) -> None:
         """Initialize the pdf database"""
-        db_cache_path = f"/app/ckpt/pdf_parser_{db_name}.pkl"
+        user_path = os.path.expanduser('~')
+        ckpt_path = os.path.join(user_path, "ckpt")
+        db_cache_path = os.path.join(ckpt_path, f"pdf_parser_{db_name}.pkl")
         self.db_cache_path = db_cache_path
 
         # load the cache if it exists, and save a copy to disk
