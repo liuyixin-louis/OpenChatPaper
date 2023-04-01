@@ -39,15 +39,36 @@ streamlit run frontend.py --server.port 8502 --server.host localhost
 ```
 
 ## 中文配置文档
-1. 创建一个`Python>=3.9`的环境（推荐使用anaconda），创建环境后激活并且安装依赖
+> 程序在`Python>=3.9`, `Ubuntu 20.04`下测试，若在其他平台测试出错，欢迎提issue
+
+1. 创建一个Python的环境（推荐使用anaconda，关于如何安装请查阅[其他教程](https://zhuanlan.zhihu.com/p/123188004)），创建环境后激活并且安装依赖
 ```bash
  conda create -n cpr python=3.9
  conda activate cpr
  pip install -r requirements.txt
 ```
 
-2. 
- 
+2. 确保本机安装了java环境，如果`java -version`成功放回版本即说明安装成功。关于如何安装JAVA请查阅[其他教程](https://www.runoob.com/java/java-environment-setup.html)
+
+3. [GROBID](https://github.com/kermitt2/grobid)是一个开源的PDF解析器，我们会在本地启动它用来解析输入的pdf。执行以下命令来下载GROBID和运行，成功后会显示`EXECUTING[XXs]`
+
+```bash
+bash serve_grobid.sh
+```
+
+![image](https://user-images.githubusercontent.com/53036760/229299669-7425c18d-c0fe-4e53-8022-5cd094c5c0cf.png)
+
+3. 开启后端进程：每个用户的QA记录放进一个缓存pool里
+
+```bash
+python backend.py --port 5000 --host localhost
+```
+
+4. 最后一步，开启Streamlit前端，访问`http://localhost:8502`，在API处输入OpenAI的APIkey（[如何申请?](https://juejin.cn/post/7203009064719400997)），上传PDF文件解析完成后便可开始对话
+
+```bash
+streamlit run frontend.py --server.port 8502 --server.host localhost
+```
 
 ## Demo Example
 
