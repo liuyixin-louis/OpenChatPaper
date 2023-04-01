@@ -8,6 +8,7 @@ Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source 
 
 **News**
 - **Sat. Apr.1, 2023:** Add some buttons to get some basic aspects of paper quickly.
+
 ![image](https://user-images.githubusercontent.com/53036760/229304107-b3c38813-495e-4610-a6f4-379dfb8e2806.png)
 
 ## Online Demo API
