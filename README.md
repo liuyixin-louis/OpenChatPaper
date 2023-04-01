@@ -6,7 +6,7 @@ Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source 
 
 又一个基于OpenAI ChatGPT API的论文阅读助手。试图重新实现 [ChatPDF](https://www.chatpdf.com/) 的开源版本。支持对话的 [ChatPaper](https://github.com/kaixindelele/ChatPaper) 版本。
 
-** Sat. Apr.1, 2023:** Add some buttons to get some basic aspects of paper quickly.
+**Sat. Apr.1, 2023:** Add some buttons to get some basic aspects of paper quickly.
 
 ## Online Demo API
 
