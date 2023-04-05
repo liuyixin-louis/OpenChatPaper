@@ -6,8 +6,9 @@ from chatbot import OpenAIChatbot
 from chat_pdf import ChatPDF
 from config import DEFAULT_ENGINE, MAX_TOKEN_MODEL_MAP, DEFAULT_TEMPERATURE, DEFAULT_TOP_P, DEFAULT_PRESENCE_PENALTY, DEFAULT_FREQUENCY_PENALTY, DEFAULT_REPLY_COUNT
 from flask import Flask, request
+from base_class import Pool
 app = Flask(__name__)
-chatpdf_pool = {}
+chatpdf_pool = Pool()
 
 embedding_model = HuggingfaceSentenceTransformerModel()
 simi_metric = CosineSimilarity()
@@ -79,4 +80,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000, debug=False)
+    app.run(host='localhost', port=5000, debug=True)

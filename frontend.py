@@ -3,7 +3,7 @@ import os
 import streamlit as st
 from streamlit_chat import message
 import requests
-from config import PDF_SAVE_DIR
+from config import PDF_SAVE_DIR, quickbuttons
 
 st.set_page_config(
     page_title="ChatPaper - Demo",
@@ -59,7 +59,37 @@ if pdf_uploader is not None:
         with open(filepath, "wb") as f:
             f.write(pdf_uploader.getbuffer())
         user_query = get_text()
-
+        
+        # summarize_button = st.sidebar.button("Summarize")
+        # if summarize_button:
+        #     user_query = "Please summarize this paper."
+        
+        # contribution_button = st.sidebar.button("Contribution")
+        # if contribution_button:
+        #     user_query = "What is the contribution of this paper?"
+        
+        # novelty_button = st.sidebar.button("Novelty")
+        # if novelty_button:
+        #     user_query = "What is the novelty of this paper?"
+        
+        # strength_button = st.sidebar.button("Strength")
+        # if strength_button:
+        #     user_query = "What are the strengths of this paper?"
+        
+        # drawback_button = st.sidebar.button("Drawback")
+        # if drawback_button:
+        #     user_query = "What are the drawbacks of this paper?"
+        
+        # improvement_button = st.sidebar.button("Improvement")
+        # if improvement_button:
+        #     user_query = "What might be the improvements of this paper?"
+        
+        st.sidebar.markdown("## Quick Buttons")
+        for key, value in quickbuttons.items():
+            button = st.sidebar.button(key, key=key)
+            if button:
+                user_query = value
+        
         if user_query:
             st.session_state.past.append(user_query)
             query_data = {"pdf_link": filepath,

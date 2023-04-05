@@ -1,8 +1,38 @@
+import time
 import os
 import abc
 import pandas as pd
 import pickle
 
+class Pool():
+    def __init__(self, ):
+        self.dict = {}
+        self.update_time = {}
+        # 1 hour
+        self.time_interval = 60 * 60
+    
+    def __contains__(self, key):
+        self._del_outdated()
+        return key in self.dict
+    
+    def __getitem__(self, key):
+        self._del_outdated()
+        return self.dict[key]
+    
+    def __setitem__(self, key, value):
+        self.dict[key] = value
+        self.update_time[key] = time.time()
+        self._del_outdated()
+        
+    def _del_outdated(self,):
+        for key in self.update_time:
+            if time.time() - self.update_time[key] > self.time_interval:
+                del self.dict[key]
+                del self.update_time[key]
+        
+    def __delitem__(self, key):
+        del self.dict[key]
+    
 
 class SimilarityAlg(metaclass=abc.ABCMeta):
     """Similarity Algorithm to compute similarity between query_embedding and embeddings"""
@@ -22,6 +52,9 @@ class Embedding_Model(metaclass=abc.ABCMeta):
         """Initialize the embedding model"""
         user_path = os.path.expanduser('~')
         ckpt_path = os.path.join(user_path, "ckpt")
+        # creat path if not exist
+        if not os.path.exists(ckpt_path):
+            os.makedirs(ckpt_path)
         embedding_cache_path = os.path.join(ckpt_path, f"embedding_cache_{model_name}.pkl")
         self.embedding_cache_path = embedding_cache_path
 
@@ -48,6 +81,8 @@ class AbstractPDFParser(metaclass=abc.ABCMeta):
         """Initialize the pdf database"""
         user_path = os.path.expanduser('~')
         ckpt_path = os.path.join(user_path, "ckpt")
+        if not os.path.exists(ckpt_path):
+            os.makedirs(ckpt_path)
         db_cache_path = os.path.join(ckpt_path, f"pdf_parser_{db_name}.pkl")
         self.db_cache_path = db_cache_path
 

@@ -11,3 +11,4 @@ tiktoken
 lxml
 PyPDF2
 pdfminer.six
+pysbd

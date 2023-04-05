@@ -35,7 +35,7 @@ python backend.py --port 5000 --host localhost
 4. Frontend 
 
 ```bash
-streamlit run frontend.py --server.port 8502 --server.host localhost
+streamlit run frontend.py --server.port 8502 --server.address localhost
 ```
 
 ## 中文配置文档
@@ -67,7 +67,7 @@ python backend.py --port 5000 --host localhost
 4. 最后一步，开启Streamlit前端，访问`http://localhost:8502`，在API处输入OpenAI的APIkey（[如何申请?](https://juejin.cn/post/7203009064719400997)），上传PDF文件解析完成后便可开始对话
 
 ```bash
-streamlit run frontend.py --server.port 8502 --server.host localhost
+streamlit run frontend.py --server.port 8502 --server.address localhost
 ```
 
 ## Demo Example

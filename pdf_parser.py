@@ -4,9 +4,9 @@ from scipdf_utils import parse_pdf_to_dict
 
 
 class GrobidSciPDFPaser(AbstractPDFParser):
-    import pysbd
-    seg_en = pysbd.Segmenter(language="en", clean=False)
-    seg_chinese = pysbd.Segmenter(language="zh", clean=False)
+    # import pysbd
+    # seg_en = pysbd.Segmenter(language="en", clean=False)
+    # seg_chinese = pysbd.Segmenter(language="zh", clean=False)
 
     def __init__(self, pdf_link, db_name="grobid_scipdf", short_thereshold=30) -> None:
         """Initialize the PDF parser
@@ -131,18 +131,18 @@ class GrobidSciPDFPaser(AbstractPDFParser):
             })
         return section_pair_list
 
-    @staticmethod
-    def _determine_optimal_split_of_pargraphs(section_pair_list) -> None:
-        """
-        split based on the some magic rules
-        """
-        import pysbd
-        for section_pair in section_pair_list:
-            if GrobidSciPDFPaser._check_chinese(section_pair["text"]):
-                seg = GrobidSciPDFPaser.seg_chinese
-            else:
-                seg = GrobidSciPDFPaser.seg_en
-            section_pair["texts"] = seg.segment(section_pair["texts"])
-            section_pair["texts"] = [
-                para for para in section_pair["text"] if len(para) > 2]
-        return section_pair_list
+    # @staticmethod
+    # def _determine_optimal_split_of_pargraphs(section_pair_list) -> None:
+    #     """
+    #     split based on the some magic rules
+    #     """
+    #     import pysbd
+    #     for section_pair in section_pair_list:
+    #         if GrobidSciPDFPaser._check_chinese(section_pair["text"]):
+    #             seg = GrobidSciPDFPaser.seg_chinese
+    #         else:
+    #             seg = GrobidSciPDFPaser.seg_en
+    #         section_pair["texts"] = seg.segment(section_pair["texts"])
+    #         section_pair["texts"] = [
+    #             para for para in section_pair["text"] if len(para) > 2]
+    #     return section_pair_list

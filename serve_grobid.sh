@@ -11,4 +11,4 @@ fi
 
 # run GROBID
 cd grobid-${GROBID_VERSION} || exit
-./gradlew run
+./gradlew run 
