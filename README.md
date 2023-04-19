@@ -6,10 +6,13 @@ Yet another paper reading assistant based on OpenAI ChatGPT API. An open-source 
 
 又一个基于OpenAI ChatGPT API的论文阅读助手。试图重新实现 [ChatPDF](https://www.chatpdf.com/) 的开源版本。支持对话的 [ChatPaper](https://github.com/kaixindelele/ChatPaper) 版本。
 
-**News**
-- **Sat. Apr.1, 2023:** Add some buttons to get some basic aspects of paper quickly.
+**New Features:**
+<!-- - **Sat. Apr.19, 2023:** Support using open-source model Meta Llama to replace OpenAI API. -->
+- **Sat. Apr.1, 2023:** Add some buttons (summarize, contribution, novelty, strength, drawback, improvement) to get some basic aspects of paper quickly.
 
-![image](https://user-images.githubusercontent.com/53036760/229304107-b3c38813-495e-4610-a6f4-379dfb8e2806.png)
+<!-- ## How to use open-source model Meta Llama to replace OpenAI API
+- Convert the model weight into huggingface format following this [tutorial](https://huggingface.co/docs/transformers/main/en/model_doc/llama).
+-  -->
 
 ## Online Demo API
 
